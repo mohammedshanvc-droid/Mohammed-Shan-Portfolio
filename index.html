@@ -8,6 +8,7 @@
 <meta name="description" content="Portfolio of Mohammed Shan VC, Python Full Stack Developer. Explore web applications, backend projects, skills and contact details.">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800&display=swap">
 <style>
+
 :root{--bg:#fff;--fg:#0b0b0c;--mute:#6f7075;--line:#e4e4e1;--band:#0b0b0c;--band-fg:#fff;--blue:#3157ff;--f:'Inter Tight',system-ui,-apple-system,'Segoe UI',Helvetica,Arial,sans-serif;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0b0c;--fg:#f2f2ef;--mute:#9a9ba0;--line:#26272a;--band:#f2f2ef;--band-fg:#0b0b0c}}
 :root[data-theme="dark"]{--bg:#0b0b0c;--fg:#f2f2ef;--mute:#9a9ba0;--line:#26272a;--band:#f2f2ef;--band-fg:#0b0b0c}
@@ -134,6 +135,39 @@ dialog::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
 }
 @media(min-width:1024px){.two{grid-template-columns:5fr 7fr;gap:56px}.tools{columns:4}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#role::after{animation:none}.pimg img,.pc,.band svg,.photo,.photo img{transition:none}.pc{opacity:1;transform:none}}
+.cv-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-top: 14px;
+    padding-bottom: 40px;
+}
+
+.cv-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border: 1px solid var(--fg);
+    border-radius: 4px;
+    font: 700 12px var(--f);
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.cv-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.85;
+}
+
+.view-cv {
+    background: var(--fg);
+    color: var(--bg);
+}
+
+.download-cv {
+    background: transparent;
+    color: var(--fg);
+}
 </style>
 </head>
 <body>
@@ -166,7 +200,7 @@ dialog::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
         <img src="static/image/profileblack.PNG" alt="Mohammed Shan VC" width="520" height="650">
       </figure>
       <div>
-        <p class="hello">Hello!<br>I’m Mohammed Shan</p>
+        <p class="hello">Hello!<br>I’m Mohammed Shan VC</p>
         <p>A BCA graduate from the University of Calicut, training in Python full stack development at HACA. I build secure, database-driven web apps with Django and FastAPI.</p>
         <p class="mut">Perinthalmanna, Kerala · Open to internships and entry-level roles</p>
       </div>
@@ -185,6 +219,24 @@ dialog::backdrop{background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
       </ul>
     </div>
   </div>
+
+<div class="cv-buttons pad">
+
+    <a href="static/cv/Mohammed-Shan-VC-CV.pdf"
+       target="_blank"
+       rel="noopener"
+       class="cv-btn view-cv">
+        View CV
+    </a>
+
+    <a href="static/cv/Mohammed-Shan-VC-CV.pdf"
+       download="Mohammed-Shan-VC-CV.pdf"
+       class="cv-btn download-cv">
+        Download CV
+    </a>
+
+</div>
+
 
   <div class="pad blk">
     <div class="lab"><span>Stack</span><span>02</span></div>
